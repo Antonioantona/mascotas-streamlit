@@ -1,7 +1,7 @@
 services:
- app:
-  build: .
-  volumes:
-    - ./src:/app
-  ports:
-    - 8501:8501
+  app:
+    build: .
+    volumes:
+      - .:/app/
+    ports:
+      - 8501:8501
